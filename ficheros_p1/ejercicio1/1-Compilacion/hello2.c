@@ -1,3 +1,9 @@
+/*
+Use "gcc --save-temps hello2.c" in order to save all of the intermediate files used during compilation
+The .i file is the final precompiled version of the source file, with includes being resolved, comments erased, and defines being replaced in the actual code.
+In this case for example, the a = min(a,b) call gets replaced with:
+  a = ( (a<b)?a:b );
+*/
 #include <stdio.h>
 
 #define N 5
